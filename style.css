@@ -39,30 +39,40 @@ button{
     outline: none;
 }
 #inputNewTarefa{
-    width: 60%;
-    height: 21px;
+    margin-top: 5px;
+
+    height: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    width: 90%;
 }
 
 
 #btnAddTarefa{
-    margin-left: 10%;
+    margin-left: 5%;
     width: 30px;
-    height: 32px;
+    height: 30px;
     background-color: rgb(138, 81, 230);
     border-radius: 20%;
-    padding: 2px;
+
     color: aliceblue;
 }
 .inserirNovaTarfa{
-    margin-bottom: 10px;
+    background-color: grey;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 5px;
 }
 
 .divdados{
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 10px;
     background: lightgrey;
     border-radius: 8px;
-    box-shadow: 6px 5px 10px 0px gray;
+    box-shadow: 6px 5px 10px 0px aliceblue;
     display: flex;
     align-items: center;
 }
@@ -80,3 +90,7 @@ button{
     color: aliceblue;
     border: 1px;
 }
+
+ li{
+    list-style-type: none;
+ }

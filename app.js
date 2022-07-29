@@ -25,7 +25,9 @@ const criarTarefa = (text, status, indice) =>{
         <i class="fa fa-trash" data-indice = ${indice} data-acao = 'excluir'></i></button>
     </div>
     `
+    
     document.getElementById('listarTarefa').appendChild(tarefa);
+ 
 }
 inputNewTarefa.addEventListener('keypress', (e) => {
     let texto = inputNewTarefa.value
