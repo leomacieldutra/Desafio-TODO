@@ -3,3 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(183, 238, 238);
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+ul{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+}
+
+.conteudo{
+    margin-top: 40px;
+    width: 20%;
+}
+
+.topo{
+    font-size: 20px;
+}
+
+button{
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+#inputNewTarefa{
+    width: 60%;
+    height: 21px;
+}
+
+#btnAddTarefa{
+    margin-left: 10%;
+    width: 30px;
+    height: 32px;
+    background-color: rgb(138, 81, 230);
+    border-radius: 20%;
+    padding: 2px;
+    color: aliceblue;
+}
