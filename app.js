@@ -1,5 +1,6 @@
 let inputNewTarefa = document.getElementById('inputNewTarefa');
 let btnAddTarefa = document.getElementById('btnAddTarefa');
+let listarTarefa = document.getElementById('listarTarefa');
 
 const getBD = () => JSON.parse(localStorage.getItem('todoList')) ?? [];
 const setBD = (BD) => localStorage.setItem('todoList', JSON.stringify(BD));
@@ -32,3 +33,20 @@ btnAddTarefa.addEventListener('click', (e) =>{
         alert('clicouu');
     }
 });
+
+
+
+
+
+
+const clear = () =>{
+    let ul = document.getElementById('listarTarefa');
+    while(ul.firstChild){ ul.removeChild(ul.lastChild); }
+ }
+
+const render = () => {
+    clear();
+    const BD = getBD();
+    BD.forEach( (item, indice )=> criarTarefa(item.tarefa, item.status, indice));
+}
+render();
