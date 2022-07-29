@@ -1,3 +1,9 @@
+let inputNewTarefa = document.getElementById('inputNewTarefa');
+let btnAddTarefa = document.getElementById('btnAddTarefa');
+
+const getBD = () => JSON.parse(localStorage.getItem('todoList')) ?? [];
+const setBD = (BD) => localStorage.setItem('todoList', JSON.stringify(BD));
+
 const criarTarefa = (text, status, indice) =>{
     let tarefa = document.createElement('li');
     tarefa.innerHTML= `
